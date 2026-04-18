@@ -1,7 +1,17 @@
 {
   "permissions": {
     "allow": [
-      "Bash(npx create-next-app@latest --help)"
+      "Bash(npx create-next-app@latest --help)",
+      "Bash(npx create-next-app@latest . --typescript --tailwind --app --eslint --use-npm --no-src-dir --import-alias \"@/*\")",
+      "Bash(npx create-next-app@latest . --typescript --tailwind --app --eslint --use-npm --no-src-dir --import-alias \"@/*\" --no-turbopack)",
+      "Bash(npx create-next-app@latest groupon-deal-generator --typescript --tailwind --app --eslint --use-npm --no-src-dir --import-alias \"@/*\" --no-turbopack)",
+      "Bash(npm install *)",
+      "Bash(node -e \"console.log\\(require\\('./node_modules/next/package.json'\\).version\\)\")",
+      "Bash(node -e \"console.log\\(require\\('./node_modules/tailwindcss/package.json'\\).version\\)\")",
+      "Bash(npm run *)",
+      "Bash(curl -s http://localhost:3000)",
+      "Bash(pkill -f \"next dev\")",
+      "Bash(curl *)"
     ]
   }
 }
